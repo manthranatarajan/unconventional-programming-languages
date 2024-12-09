@@ -1,5 +1,5 @@
 # unconventional-programming-languages
-Projects with Racket and Prolog.
+Projects with Racket, Prolog, ...and some other weird languages.
 
 # Racket Exercises Project
 
