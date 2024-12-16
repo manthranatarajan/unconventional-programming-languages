@@ -155,3 +155,96 @@ This project is a collection of Prolog exercises that demonstrate solutions to v
    ?- [project_file].
    ```
 3. Run queries for the desired exercises.
+
+
+# "Branflake" Program
+
+## Overview
+The "Branflake" program is a Brainfuck implementation designed to handle basic arithmetic operations (+, *) on two integers and produce a formatted output. The program parses input strings of the format:
+
+```
+x⟨op⟩y;
+```
+Where:
+- `x` and `y` are integers (no more than two digits each).
+- `⟨op⟩` is either `+` (addition) or `*` (multiplication).
+- The input string ends with a semicolon (`;`).
+
+The program computes the result of the arithmetic operation and outputs a string in the format:
+
+```
+result netid
+```
+Where `result` is the computed value, and `netid` is the user's lowercase NetID.
+
+---
+
+## Features
+- Accepts and processes input strings like:
+  - `9+17;`
+  - `82*4;`
+  - `91+42;`
+  - `5*8;`
+- Handles addition (`+`) and multiplication (`*`).
+- Outputs the result as a string followed by the user's NetID.
+- Uses the semicolon (`;`) to detect the end of the input string.
+
+---
+
+## Example Usage
+### Input
+```
+12+34;
+```
+
+### Output
+```
+46 mxn220038
+```
+
+### Input
+```
+5*8;
+```
+
+### Output
+```
+40 mxn220038
+```
+
+---
+
+## How It Works
+1. **Input Parsing**:
+   - The program reads the input string character by character.
+   - It identifies the two integers (`x` and `y`) and the operator (`+` or `*`).
+   - It uses the ASCII values of characters to interpret digits (e.g., ASCII `7` corresponds to integer `55 - 48 = 7`).
+
+2. **Computation**:
+   - For addition, the two numbers are added directly.
+   - For multiplication, the two numbers are multiplied.
+
+3. **Output Generation**:
+   - The result of the computation is converted into a string.
+   - The NetID is appended to the result with a space in between.
+
+---
+
+## Running the Program
+### Prerequisites
+- Use a Brainfuck interpreter to execute the program. Recommended online tools:
+  - [Online Brainfuck Interpreter](https://copy.sh/brainfuck/)
+
+### Steps
+1. Load the `mxn220038.bf` file into your Brainfuck interpreter.
+2. Provide an input string in the specified format (e.g., `12+34;` or `82*4;`).
+3. Run the program to see the output.
+
+---
+
+## Notes
+- Ensure the input strictly follows the required format (`x⟨op⟩y;`).
+- The program handles only two-digit integers.
+- The semicolon (`;`) is mandatory to terminate the input string.
+
+---
