@@ -1,0 +1,35 @@
+// a skibidi calculator with the new brainrot language.
+
+cook {
+    yap("Welcome to the Rizz Calculator 3000!");
+    
+    // Declare two variables and an operator
+    pookie num1 = 42;    // The ultimate answer
+    pookie num2 = 7;     // A lucky number
+    pookie op = "+";     // Operation: addition
+
+    yap("Numbers to calculate: ", num1, " and ", num2, " with operator: ", op);
+
+    // Handle different operations
+    no_cap (op == "+") {
+        pookie result = num1 + num2;
+        yap("Result: ", result, " (This sum is bussin fr fr).");
+    } cap no_cap (op == "-") {
+        pookie result = num1 - num2;
+        yap("Result: ", result, " (This difference hits harder than Ohio).");
+    } cap no_cap (op == "*") {
+        pookie result = num1 * num2;
+        yap("Result: ", result, " (Multiplication certified giga-chad vibes).");
+    } cap no_cap (op == "/") {
+        sus (num2 != 0) {
+            pookie result = num1 / num2;
+            yap("Result: ", result, " (Division so clean it's bussin).");
+        } no_cap {
+            yap("Bruh moment: Division by zero detected 💀.");
+        }
+    } cap {
+        yap("Invalid operation detected. Are you delulu? 💀");
+    }
+
+    ghost;
+}
